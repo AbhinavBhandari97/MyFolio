@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<title>Portraits By AbhinavBhandari</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-third img{ opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+	
+	body{
+			animation-name:fadeIn; 
+    animation-duration: 3s;
+	
+	}
+	*{ background-color: black}
+</style>
+<body class="w3-black">
+
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Portraits</span> </h1>
+    <p>By Abhinav Bhandari.</p>
+    <img src="Portraits/_MG_4886 (1).jpg" alt="boy" class="w3-image imge2" width="792" height="808">
+  </header>
+	</div>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Professional portraits with a pinch of creativity.</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>A photographic close-up is perhaps the purest form of portraiture, creating a confrontation between the viewer and the subject that daily interaction makes impossible, or at least impolite.
+  
+   
+<br> <br> - Martin Schoeller.
+    </p>
+   
+ 
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Professional cum art.</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-row w3-third container image">
+<img src="Portraits/_MG_2991.jpg" style="width:100%" onclick="onClick(this)" alt="Camera – Canon 650D
+Lens Used – 50mm f1.8
+Shutter Speed – 1/800 
+ISO – 100
+Aperture – 1.8 <br>
+Model Name – Fatma Haija
+">
+        
+        <img src="Portraits/_MG_3298.jpg" style="width:100%" onclick="onClick(this)" alt="Camera – Canon 60D //
+Lens Used – 50mm f1.8 //
+Shutter Speed – 1/400 //
+ISO – 100 //
+Aperture – 1.8 <br>
+Model Name – Prakhar Chauhan
+" >
+        <img src="Portraits/_MG_3511.jpg" style="width:100%" onclick="onClick(this)" alt="Camera – Canon 650D
+Lens Used – 50mm f1.8
+Shutter Speed – 1/2500
+ISO – 100
+Aperture – 2 <br>
+Model Name – Molshree Sharma
+">
+         <img src="Portraits/IMG_0690.jpg" style="width:100%" onclick="onClick(this)" alt="Camera – Canon 60D
+Lens Used – 50mm f1.8
+Shutter Speed – 1/125
+ISO – 100
+Aperture – 1.8 <br>
+Model Name – Preeti Singh
+">
+      </div>
+
+      <div class="w3-half w3-half w3-row w3-third">
+        <img src="Portraits/_MG_3720.jpg" style="width:100%"  onclick="onClick(this)" alt="Camera – Canon 650D
+Lens Used – 50mm f1.8
+Shutter Speed – 1/1000
+ISO – 100
+Aperture – 1.8 <br>
+Model Name – Shriya Upadhyay
+">
+        <img src="Portraits/_MG_3761.jpg" style="width:100%" onclick="onClick(this)" alt="Camera – Canon 650D
+Lens Used – 50mm f1.8
+Shutter Speed – 1/500
+ISO – 100
+Aperture – 1.8 <br>
+Model Name – Shriya Upadhyay
+">
+       
+        <img src="Portraits/_MG_5171.jpg" style="width:100%" onclick="onClick(this)" alt="Camera – Canon 650D
+Lens Used – 50mm f1.8
+Shutter Speed – 1/500
+ISO – 100
+Aperture – 1.8
+Model Name – Akansha Mishra
+">
+        <img src="Portraits/b_MG_4877.jpg" style="width:100%" onclick="onClick(this)" alt="Camera – Canon 650D
+Lens Used – 50mm f1.8
+Shutter Speed – 1/125
+ISO – 1600
+Aperture – 1.8 <br>
+Model Name – Nikhil Dawas
+">
+       
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+  
+   <!-- Pagination -->
+ 
+ <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image" style="width:50%">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+
+<script>
+
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+ <!-- About Section -->
+  <div class="w3-content  w3-text-grey w3-center " >
+<p> Website developed <a href="AteetDubey.html"  target="_blank" class="w3-hover-text-green">Ateet Dubey.</a></p>
+	</div>
+</body>
+</html>

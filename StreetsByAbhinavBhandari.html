@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<title>Street/Architecture By AbhinavBhandari</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-third img{ opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+	
+	body{
+			animation-name:fadeIn; 
+    animation-duration: 3s;
+	
+	}
+	*{ background-color: black}
+	dp{
+		
+ dpe{
+   
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+<body class="w3-black">
+
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-52 w3-center w3-black dpe" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Street/Architecture</span> </h1>
+    <p>By Abhinav Bhandari.</p>
+    <img src="Streets/street.png"  class="w3-image w3-xlarge dpe" >
+  </header>
+	</div>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Born in the streets?</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Photography is the easiest medium with which to be merely competent. Almost anybody can be competent. It's the hardest medium in which to have some sort of personal vision and to have a signature style. <br> - Chuck Close.
+    </p>
+   
+ 
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Wireframe basics cum art.</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-row w3-third container image">
+<img src="Streets/IMG_0395.jpg" style="width:100%" onclick="onClick(this)">
+        
+        <img src="Streets/IMG_0409.jpg" style="width:100%" onclick="onClick(this)" alt="text" >
+        <img src="Streets/IMG_0479.jpg" style="width:100%" onclick="onClick(this)">
+         <img src="Streets/IMG_0690.jpg" style="width:100%" onclick="onClick(this)">
+      </div>
+
+      <div class="w3-half w3-half w3-row w3-third">
+        <img src="Streets/IMG_06581.jpg" style="width:100%"  onclick="onClick(this)">
+        <img src="Streets/IMG_6880.jpg" style="width:100%" onclick="onClick(this)">
+        <img src="Streets/IMG_7501.jpg" style="width:100%" onclick="onClick(this)">
+        <img src="Streets/IMG_10762.jpg" style="width:100%" onclick="onClick(this)">
+        <img src="Streets/_MG_2551.jpg" style="width:100%" onclick="onClick(this)">
+        
+       
+       
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+  
+   <!-- Pagination -->
+ 
+ <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image" style="width:50%">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+
+<script>
+
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+ <!-- About Section -->
+  <div class="w3-content  w3-text-grey w3-center " >
+<p> Website developed <a href="AteetDubey.html"  target="_blank" class="w3-hover-text-green">Ateet Dubey.</a></p>
+	</div>
+</body>
+</html>

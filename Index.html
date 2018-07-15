@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abhinav Bhandari</title>
+<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+<meta http-equiv="refresh" preload content="3;url=TitlePage.html" />
+
+<link rel="preload" href="TitlePage.html"   as="style">
+<style>
+	body
+	{
+		margin: 0%;
+		 opacity: 1;
+    transition: 0s opacity;
+}
+	
+
+* {
+    box-sizing: border-box;
+	 width: 100%;
+	margin: 0%
+	background color: black;
+    }
+#myVideo{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	margin: 0%;
+	background-color: #000000;
+   
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+	html,body
+	{
+    background-color: black;
+}
+	
+<script>document.body.className += ' fade-out'; 
+    }
+	</script>
+</style>
+</head>
+<body>
+<video autoplay muted id="myVideo">
+<source src="index page/output.mp4" type="video/mp4"> Something's wrong, Try again in some other browser?
+</video>
+<script> 
+	$(function() {
+    $('body').removeClass('fade-out');
+}); 
+	</script>
+	
+</body>
+</html>
